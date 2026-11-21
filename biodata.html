@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050510">
+<meta name="description" content="Website pribadi Albert Clodius Vascal, mahasiswa asal Sampit.">
+<title>Biodata | Albert Clodius Vascal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050510;--surface:rgba(255,255,255,.03);--border:rgba(255,255,255,.08);--text:#eef0ff;--muted:#9a9cc0;--teal:#4fd8c4;--purple:#8b7bff;--r:16px}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+main{flex:1}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+img{display:block;max-width:100%}
+.wrap{width:min(1140px,calc(100% - 48px));margin:0 auto}
+.top{position:sticky;top:0;z-index:50;background:rgba(5,5,16,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0;flex-wrap:wrap}
+.logo{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1rem;color:var(--teal)}
+.logo:hover{opacity:.85;text-decoration:none}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+nav a{display:inline-block;padding:7px 15px;border-radius:999px;font-size:.9rem;font-weight:500;color:var(--muted);border:1px solid transparent;transition:.2s}
+nav a:hover{color:var(--text);background:rgba(255,255,255,.06);text-decoration:none}
+nav a.active{color:#fff;background:rgba(139,123,255,.14);border-color:var(--purple)}
+.page{padding:52px 0 68px}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.2;margin-top:0}
+.page h1{font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:8px;background:linear-gradient(90deg,#fff 40%,#a79bff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.page h2{font-size:1.35rem;margin:38px 0 16px}
+.lead{margin:0 0 32px;color:var(--muted)}
+.bio{display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:start;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:24px}
+.avatar{position:relative;width:180px;height:180px;border-radius:16px;overflow:hidden;border:1px solid rgba(139,123,255,.4);background:linear-gradient(135deg,rgba(139,123,255,.22),rgba(79,216,196,.16));display:grid;place-items:center}
+.avatar::before{content:attr(data-initials);font-family:'Space Grotesk',sans-serif;font-size:2.5rem;font-weight:700;color:var(--teal)}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%}
+dl{margin:0;display:grid;grid-template-columns:minmax(140px,190px) 1fr;gap:10px 18px}
+dt{color:var(--muted);font-size:.92rem;font-weight:500}
+dd{margin:0;color:var(--text);font-weight:500;word-break:break-word}
+.hobi{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.hobi li{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:18px 20px;transition:.2s}
+.hobi li:hover{border-color:rgba(79,216,196,.45);transform:translateY(-2px)}
+.hobi h3{font-size:1.05rem;margin-bottom:6px;color:var(--teal)}
+.hobi p{margin:0;font-size:.92rem;color:var(--muted)}
+.bawah{border-top:1px solid var(--border);padding:22px 0;font-size:.875rem;color:var(--muted)}
+@media(max-width:720px){.bio{grid-template-columns:1fr;padding:20px}.avatar{width:140px;height:140px}dl{grid-template-columns:1fr;gap:4px}dt{margin-top:10px}dt:first-child{margin-top:0}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html">albert.vascal</a>
+    <nav aria-label="Menu utama">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="biodata.html" class="active" aria-current="page">Biodata</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="tugas1.html">Tugas 1</a></li>
+        <li><a href="tugas2.html">Tugas 2</a></li>
+        <li><a href="tugas3.html">Tugas 3</a></li>
+        <li><a href="tugas-akhir.html">Tugas Akhir</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="page">
+  <div class="wrap">
+    <h1>Biodata</h1>
+    <p class="lead">Data diri singkat dan hal-hal yang saya sukai.</p>
+    <div class="bio">
+      <div class="avatar" data-initials="AV"><img src="profil.jpg" alt="Foto Albert Clodius Vascal" onerror="this.remove()"></div>
+      <dl>
+        <dt>Nama lengkap</dt><dd>Albert Clodius Vascal</dd>
+        <dt>Nama panggilan</dt><dd>Albert</dd>
+        <dt>Tempat, tanggal lahir</dt><dd>Sampit, 17 April 2006</dd>
+        <dt>Jenis kelamin</dt><dd>Laki-laki</dd>
+        <dt>Agama</dt><dd>Kristen</dd>
+        <dt>Alamat</dt><dd>Kost Sulthan</dd>
+        <dt>Pendidikan</dt><dd>SMAN 1 Sampit</dd>
+        <dt>Pekerjaan</dt><dd>Mahasiswa</dd>
+        <dt>Email</dt><dd><a href="mailto:vascalllvas@gmail.com">vascalllvas@gmail.com</a></dd>
+        <dt>Telepon</dt><dd><a href="tel:+62895415146262">0895-4151-46262</a></dd>
+      </dl>
+    </div>
+    <h2>Hobi</h2>
+    <ul class="hobi">
+      <li><h3>Hobi pertama</h3><p>Ceritakan singkat kenapa kamu menyukainya.</p></li>
+      <li><h3>Hobi kedua</h3><p>Ceritakan singkat kenapa kamu menyukainya.</p></li>
+      <li><h3>Hobi ketiga</h3><p>Ceritakan singkat kenapa kamu menyukainya.</p></li>
+      <li><h3>Hobi keempat</h3><p>Ceritakan singkat kenapa kamu menyukainya.</p></li>
+    </ul>
+  </div>
+</main>
+<footer class="bawah">
+  <div class="wrap">&copy; 2026 Albert Clodius Vascal. Dibuat dengan HTML &amp; CSS.</div>
+</footer>
+</body>
+</html>
